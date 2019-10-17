@@ -1,0 +1,29 @@
+<?php
+$config = array (
+	//签名方式,默认为RSA2(RSA2048)
+	'sign_type' => "RSA2",
+
+	//支付宝公钥
+	'alipay_public_key' => "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4YDkyjbtbmP9gK414q/1xn3s0DVJOrhyGKDE+XqGDwIjTclSCk4A8clQSx7x822mv2TrSQq4+9LGd+4I/7YKhpKPpsyDs2G11xBz8tXBDPaE+itOkap6QIyFkejhoDa4gWFrHTYwNwCu5T+Pg/zY/ekDm+76ohtevcgmeno9SVTuNydfr3rLmyM5hYtuSXJjRLjsh7tBpXYmuOSyLpRUyqJMhvQrCh2o0AarpDjgGL55XyrSf3J3sn8d58BtQRdosL+dy/F2R9lrEtFciiGIO3e+6PqL7nRxWwAwQl2SipreYMY8dsQluQIbXflG/+ys5MuRsf7EDZ9TK2LTkHPmxwIDAQAB",
+
+	//商户私钥
+	'merchant_private_key' => "MIIEpAIBAAKCAQEA4YDkyjbtbmP9gK414q/1xn3s0DVJOrhyGKDE+XqGDwIjTclSCk4A8clQSx7x822mv2TrSQq4+9LGd+4I/7YKhpKPpsyDs2G11xBz8tXBDPaE+itOkap6QIyFkejhoDa4gWFrHTYwNwCu5T+Pg/zY/ekDm+76ohtevcgmeno9SVTuNydfr3rLmyM5hYtuSXJjRLjsh7tBpXYmuOSyLpRUyqJMhvQrCh2o0AarpDjgGL55XyrSf3J3sn8d58BtQRdosL+dy/F2R9lrEtFciiGIO3e+6PqL7nRxWwAwQl2SipreYMY8dsQluQIbXflG/+ys5MuRsf7EDZ9TK2LTkHPmxwIDAQABAoIBAQCvKQmOMSA4cR7GR4u/q2JDbij2iY16OS8XBjo6dvuOyOBXWZuKOZDuPqtJzp2tsmylmmRQdi2+HbjgC1ueFO8UHN/MdmuOeMVgan1GENdFlG8yS1VaPIt9fCl8buJjKl4i0WL8a80DzFoN5FM7+LkscUTGaNjx9kSfMcsBs9XLEOGoyIH0MIowN1OcUZPtQrDFUYILKx13LS+z9joxfRIMvUwM8K8FeacLNy/svbDOV4qPqCZ6mgUlUqxNi37BJeJM3qYfgFyMSOoxfopQ8SwODqmTaE1YPV7hybEk+yQGqGVYAGyozfOKsupUiMZ6pi2oHh1DTDscqWgZnHI5o81xAoGBAP4JHaxhAoJSn8SRNixNgVg03goRjzTgNE5AWOEcCKQ0l9fvzHNlV0lO2KSPAftx+ffdhBoMDJg0/1Da3F8cQwT1MFrogKDdMsTQsgnO4utj+9fodiDOgcCLDgDV8u848offNrI4nsIuxrUE+4hv7XyqNaazCN9SHU+0hWfIZ+CjAoGBAOM/S9D+VlblzJFJ9XJEZ5Lcltjc9NwcEoyzNqBx05MrCijnl+bYCS8h6/FHLFhJBxBFLjKg6rT/4PiHZ8UkNoF4Om3f4Lxo51QVmmF3+IkIJlztx8BXZyI6TcvwWkySZa9nkpggV4PSdFd0cXvh6fcJ+kb/Rl0PFc7ymkvgt++NAoGBAIvxa6ZVfrNaXudDc4tuWu3DmfoD+FcRl97vtca00dHbozZyxLdhQXeB9viYS2hAPoscPbS3pIyIzYm2N6YxhH4LsEq0QH/duyUPLrUWgo1X9BnZ1pF2EaaHM/yj4AOG5JyTC6ecZ2DjsdVw3DwqJLMDdTDS+fVEYB9TfBZTIV5vAoGAPl9tK9vjTs6cK3SlTcvAseqh7LwY6SE7Zir6X2derxItI7UNWGsLekhRPlROs5y3t5uFZpgMU8m3sf9YWB/sZfTd9LJyOMSCWe3kBcSsDtCR1wfcv8o9oINoPwWlg0bbah1/ewnFe4UUMbzgOSR01z2B2GLQqVIupjKobxMq6TECgYASWBDn40BMH7vgixR53bIAVwKSGVj/nsA4cWerZB5OeWfMVAXcGgvsnYOLjhnZOQ2+vLRo+wvQkI+R4rsLQO7mJp690ZuJrbHqmblRA0ooho+O+ZLXCctZGN7cDTMIDBkfE9IVmYhvL9Vp0Rhi3ZEbJ6tri2XPWVK54SYmnACoaQ==",
+
+	//编码格式
+	'charset' => "UTF-8",
+
+	//支付宝网关
+	'gatewayUrl' => "https://openapi.alipay.com/gateway.do",
+
+	//应用ID
+	'app_id' => "2019100768116577",
+
+	//异步通知地址,只有扫码支付预下单可用
+	'notify_url' => $siteurl.'f2fpay_notify.php',
+
+	//最大查询重试次数
+	'MaxQueryRetry' => "10",
+
+	//查询间隔
+	'QueryDuration' => "3"
+);
